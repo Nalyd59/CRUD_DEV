@@ -45,7 +45,7 @@ const updateUser = (req, res) => {
 
 const deleteUser = (req, res) => {
   const query = 'DELETE FROM users WHERE id =?'
-  conn.query(query, [req.params.id], (err, result) => {
+  conn.query(query, [req.params.id], (err, resultat) => {
     if (err) {
       console.error('Erreur lors de la suppression des données : ' + err);
       res.status(500).json({ error: 'Erreur lors de la suppression des données' });

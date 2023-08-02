@@ -9,7 +9,6 @@ const userRoutes = require('./routes/user.route');
 const cors = require('cors');
 
 // Connection a la base de données
-
 const connectDb = require('./config/db');
 
 // Middlewares
@@ -25,7 +24,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // Use cors
 app.use(cors({
-    origin: 'http://127.0.0.1:8080',
+    origin: '*',
     optionsSuccessStatus: 200
 })
 );
@@ -54,16 +53,3 @@ const start = async () => {
 };
 
 start();
-
-
-
-
-
-
-
-
-
-
-
-
-
