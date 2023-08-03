@@ -7,9 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
+        <button type="button" id="btnAddUser">Ajouter un utilisateur</button>
         <h1>CRUD PROJECT</h1>
+
     </header>
+
+    <div id="containerPoppin">
+
+        <div class="poppin">
+            <form id="addUserForm" class="hidden" method="GET">
+                <h2>Ajouter un utilisateur</h2>
+        
+                <div class="formWrapper">
+                  <div class="inputWrapper">
+                    <input type="text" name="nom" placeholder="Nom" />
+                    <input type="text" name="prenom" placeholder="Prénom" />
+                  </div>
+                  <input type="email" name="mail" placeholder="Adresse email" class="fullInput" />
+                  <div class="inputWrapper">
+                    <input type="text" name="ville" placeholder="Ville" />
+                    <input type="number" name="codepostal" placeholder="Code postal" />
+                  </div>
+                  <input type="text" name="adresse" placeholder="Adresse postale" class="fullInput" />
+                  <input
+                    type="text"
+                    name="telephone"
+                    placeholder="Numéro de téléphone"
+                  />
+                  <input type="submit" value="Ajouter" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
     <table>
         <thead>
             <tr>
@@ -21,7 +54,7 @@
                 <th>codepostal</th>
                 <th>telephone</th>
                 <th>Modifier</th>
-                <th>Supprimer</th>
+                <th id="btnDelete">Supprimer</th>
             </tr>
         </thead>
         <tbody id="resultat">

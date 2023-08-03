@@ -26,7 +26,6 @@ body{
 footer {
 	height: 80px;
 	width: 100%;
-	position: fixed;
 	bottom: 0%;
 	display: flex;
     flex-direction: column;
@@ -34,4 +33,188 @@ footer {
 	align-items: center;
 	background-color: #00AAC1;
     color: #fff;
+}
+.hr{
+    background-color: #fff;
+    height: 1px;
+    width: 90%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: Raleway;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: Raleway;
+    word-wrap: break-word;
+}
+.inscription{
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    color: #00AAC1;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    margin: 20px;
+}
+input{
+    margin: 10px;
+    padding: 8px;
+    width: 95%;
+    border-radius: 30px;
+    border: 1px solid #00AAC1;
+    color: #00AAC1;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder{
+    color: #00AAC1;
+}
+.add{
+    position: relative;
+    top: 0px;
+    left: 80%;
+}
+#vide{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#vide button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px;
+    color: #00AAC1;
+    font-weight: bold;
+    margin-top: 20px;
+}
+table{
+    margin: 0px 50px;
+}
+td{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #00AAC1;
+    border-radius: 50px;
+}
+form {
+	background-color: #FFFFFF;
+  	width: 90%;
+  	display: flex;
+  	flex-direction: column;
+ 	justify-content: center;
+  	align-items: center;
+  	gap: 1.5em;
+  	padding: 2em;
+  	border-radius: 20px;
+}
+
+.hidden {
+	display: none!important;
+}
+h2 {
+	color: #00AAC1;
+	font-family: "Raleway";
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+
+.fullInput {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: initial;
+	width: 100%;
+	gap: 4%;
+}
+.inputWrapper input {
+	background-color: #FFFFFF;
+	padding: 1em 0;
+	width: 60%;
+	border-radius: 20px;
+	border: none;
+	cursor: initial;
+	border: 1px solid rgba(0, 170, 193, 0.5);
+	font-family: "Raleway";
+	color: #00AAC1;
+  }
+.fullInput {
+	background-color: #FFFFFF;
+	padding: 1em 0;
+	width: 60%;
+	border-radius: 20px;
+	border: none;
+	cursor: initial;
+	border: 1px solid rgba(0, 170, 193, 0.5);
+	font-family: "Raleway";
+	color: #00AAC1;
+}
+form input::-moz-placeholder {
+	color: #00AAC1;
+	font-family: "Raleway";
+	opacity: 0.5;
+	padding-left: 1em;
+}
+form input::placeholder {
+	color: #00AAC1;
+	font-family: "Raleway";
+	opacity: 0.5;
+	padding-left: 1em;
+ }
+form input:focus {
+	outline: none;
+	border: 1px solid rgb(0, 170, 193);
+}
+form input[type=submit] {
+	background-color: #00AAC1;
+	padding: 1em;
+	width: 20%;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	color: #FFFFFF;
+  }
+footer {
+	border-top: 1px solid #FFFFFF;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	bottom: 0%;
+  }
+footer p {
+	font-family: "Raleway";
+	font-size: 14px;
+	font-weight: 400;
+  }
+#btnAddUser{
+	width: 250px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #00AAC1;
+    border-radius: 50px;
 }
