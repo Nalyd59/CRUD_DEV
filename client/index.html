@@ -35,8 +35,9 @@
                     type="text"
                     name="telephone"
                     placeholder="Numéro de téléphone"
+                    class="fullInput"
                   />
-                  <input type="submit" value="Ajouter" />
+                  <input type="submit" value="Ajouter"  onclick="document.location.reload()" />
                 </div>
             </form>
         </div>
@@ -44,6 +45,7 @@
     </div>
 
     <table>
+        <h2>Liste des utilisateurs</h2>
         <thead>
             <tr>
                 <th>Nom</th>
@@ -62,7 +64,6 @@
         </tbody>
     </table>
     <footer>
-        <hr>
         <p>Copyright, Dylan Crepin 2023</p>
     </footer>
     <script src="script.js"></script>
