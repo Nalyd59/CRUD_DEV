@@ -90,9 +90,13 @@ form {
 	background-color: #FFFFFF;
   	border-radius: 20px;
     display: flex;
+	width: 75%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	border: 2px solid black;
+	position: absolute;
+	top: 75px;
 }
 form input::-moz-placeholder {
 	color: #00AAC1;

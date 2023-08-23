@@ -11,41 +11,22 @@
     <header>
         <button type="button" id="btnAddUser">Ajouter un utilisateur</button>
         <h1>CRUD PROJECT</h1>
-
     </header>
 
-    <div id="containerPoppin">
-
-        <div class="poppin">
-            <form id="addUserForm" class="hidden" method="GET">
-                <h2>Ajouter un utilisateur</h2>
-        
-                <div class="formWrapper">
-                  <div class="inputWrapper">
-                    <input type="text" name="nom" placeholder="Nom" />
-                    <input type="text" name="prenom" placeholder="Prénom" />
-                  </div>
-                  <input type="email" name="mail" placeholder="Adresse email" class="fullInput" />
-                  <div class="inputWrapper">
-                    <input type="text" name="ville" placeholder="Ville" />
-                    <input type="number" name="codepostal" placeholder="Code postal" />
-                  </div>
-                  <input type="text" name="adresse" placeholder="Adresse postale" class="fullInput" />
-                  <input
-                    type="text"
-                    name="telephone"
-                    placeholder="Numéro de téléphone"
-                    class="fullInput"
-                  />
-                  <input type="submit" value="Ajouter"  onclick="document.location.reload()" />
-                </div>
-            </form>
-        </div>
-
-    </div>
+    <form id="addUserForm" class="hidden" method="GET">
+        <h2>Ajouter un utilisateur</h2>
+        <input type="text" name="nom" placeholder="Nom"  class="fullInput"/>
+        <input type="text" name="prenom" placeholder="Prénom"  class="fullInput"/>
+        <input type="email" name="mail" placeholder="Adresse email" class="fullInput" />
+        <input type="text" name="ville" placeholder="Ville"  class="fullInput"/>
+        <input type="number" name="codepostal" placeholder="Code postal" class="fullInput" />
+        <input type="text" name="adresse" placeholder="Adresse postale" class="fullInput" />
+        <input type="text" name="telephone" placeholder="Numéro de téléphone" class="fullInput" />
+        <input type="submit" value="Ajouter" onclick="document.location.reload()"/>
+    </form>
 
     <table>
-        <h2>Liste des utilisateurs</h2>
+        <h3>Liste des utilisateurs</h3>
         <thead>
             <tr>
                 <th>Nom</th>

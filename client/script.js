@@ -3,31 +3,9 @@ function handleDelete(id) {
             method: "DELETE",
         });
         document.location.reload()
-    }
+}
 
-window.onload =  function () {
-
-    // const modifUser = {
-    //     nom : "Alexandra",//document.getElementById('nom').value,
-    //     prenom : "Palombino",//document.getElementById('prenom').value,
-    //     mail : "minibino@gmail.com",//document.getElementById('mail').value,
-    //     adresse : "11 rue foch",//.getElementById('adresse').value,
-    //     ville : "Paris",//document.getElementById('ville').value,
-    //     codepostal : "75000",//document.getElementById('code_postal').value,
-    //     telephone : "0785253641"//document.getElementById('telephone').value
-    // }
-
-    // const newUser = {
-    //     nom : "hhhh",//document.getElementById('nom').value,
-    //     prenom : "hhhh",//document.getElementById('prenom').value,
-    //     mail : "a.dumortier@gmail.com",//document.getElementById('mail').value,
-    //     adresse : "55 rue sapin vert",//.getElementById('adresse').value,
-    //     ville : "hhh",//document.getElementById('ville').value,
-    //     codepostal : "13000",//document.getElementById('code_postal').value,
-    //     telephone : "0689641234"//document.getElementById('telephone').value
-    // }
-
-    
+window.onload =  function () {    
 
     // Afficher les users
 
@@ -39,7 +17,6 @@ window.onload =  function () {
     })
 
     .then(response => response.json())
-
     .then(data => handleUsers(data))
 
     function handleUsers(data) {
@@ -60,24 +37,11 @@ window.onload =  function () {
         })    
     }
 
-
-    // Modifier un user
-    
-    // fetch("http://localhost:5000/4",{
-    //     method: "PUT",
-    //     headers: {
-    //         "Content-type": "application/json"
-    //     },
-    //     body: JSON.stringify(modifUser)
-    // })
-    // .then(response => response.json())
-
-
     // Creer un user
 
-    var btnAddUser = document.getElementById('btnAddUser');
-
+    let btnAddUser = document.getElementById('btnAddUser');
     let form = document.getElementById('addUserForm');
+
 
     btnAddUser.addEventListener("click", () => {
         openForm();

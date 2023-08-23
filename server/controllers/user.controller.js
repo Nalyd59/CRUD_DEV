@@ -64,14 +64,12 @@ const getAllUsers = (req, res) => {
     } else {
       res.status(200).json(result);
     }
-  }
-
-  )
+  })
 }
 
 module.exports = {
   createUser,
   updateUser,
   deleteUser,
-  getAllUsers,
+  getAllUsers
 };
